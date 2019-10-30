@@ -90,7 +90,7 @@ namespace TDSTecnologia.Site.Web
             services.AddLogging();
             services.AddSingleton<ILoggerFactory, LoggerFactory>();
 
-            services.Configure<GoogleReCaptcha>(Configuration.GetSection("Googl	eReCaptcha"));
+            services.Configure<GoogleReCaptcha>(Configuration.GetSection("GoogleReCaptcha"));
 
             services.ConfigureApplicationCookie(opcoes =>
             {
